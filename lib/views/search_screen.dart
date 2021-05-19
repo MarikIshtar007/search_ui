@@ -79,6 +79,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 TrendingTagsWidget(),
                 TopVendorsWidget(),
                 TrendingProfilesWidget(),
+                TrendingProfilesWidget()
               ],
             ),
           ),
