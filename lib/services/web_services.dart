@@ -1,4 +1,5 @@
 import 'package:search_ui/dummy_data.dart';
+import 'package:search_ui/models/trending_profile.dart';
 import 'package:search_ui/models/trending_tag.dart';
 import 'package:search_ui/models/vendor.dart';
 
@@ -27,5 +28,13 @@ class WebService {
     // similar code as above
     Future.delayed(Duration(seconds: 1));
     return topVendorsDummyData;
+  }
+
+  List<TrendingProfile> fetchTopProfiles() {
+    // This function would be a Future return type, have async and
+    // query the data and parse it using the fromJSON method from the model.
+    // similar code as above
+    Future.delayed(Duration(seconds: 1));
+    return trendingProfileDummyData;
   }
 }

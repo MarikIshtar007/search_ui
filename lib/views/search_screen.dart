@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:search_ui/widgets/search_option_tile.dart';
 import 'package:search_ui/widgets/top_vendors.dart';
+import 'package:search_ui/widgets/trending_profiles.dart';
 import 'package:search_ui/widgets/trending_tags.dart';
 
 class SearchScreen extends StatefulWidget {
@@ -77,6 +78,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 ),
                 TrendingTagsWidget(),
                 TopVendorsWidget(),
+                TrendingProfilesWidget(),
               ],
             ),
           ),

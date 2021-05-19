@@ -1,3 +1,4 @@
+import 'package:search_ui/models/trending_profile.dart';
 import 'package:search_ui/models/trending_tag.dart';
 import 'package:search_ui/models/vendor.dart';
 
@@ -82,5 +83,53 @@ List<Vendor> topVendorsDummyData = [
     name: 'Thomas',
     designation: 'Makeup Artist',
     photoUrl: 'assets/images/thomas.jpg',
+  ),
+];
+
+List<TrendingProfile> trendingProfileDummyData = [
+  TrendingProfile(
+    name: 'Andrew',
+    likes: 1245,
+    photoUrl: 'assets/images/andrew.jpg',
+  ),
+  TrendingProfile(
+    name: 'Angela',
+    likes: 3370,
+    photoUrl: 'assets/images/angela.jpeg',
+  ),
+  TrendingProfile(
+    name: 'Elizabeth',
+    likes: 4221,
+    photoUrl: 'assets/images/elizabeth.jpg',
+  ),
+  TrendingProfile(
+    name: 'Greg',
+    likes: 734,
+    photoUrl: 'assets/images/greg.jpg',
+  ),
+  TrendingProfile(
+    name: 'Janice',
+    likes: 2772,
+    photoUrl: 'assets/images/janice.jpg',
+  ),
+  TrendingProfile(
+    name: 'Mitsuha',
+    likes: 12304,
+    photoUrl: 'assets/images/mitsuha.jpg',
+  ),
+  TrendingProfile(
+    name: 'Robin',
+    likes: 2842,
+    photoUrl: 'assets/images/robin.jpg',
+  ),
+  TrendingProfile(
+    name: 'Thomas',
+    likes: 720,
+    photoUrl: 'assets/images/thomas.jpg',
+  ),
+  TrendingProfile(
+    name: 'Andrew',
+    likes: 1245,
+    photoUrl: 'assets/images/andrew.jpg',
   ),
 ];
