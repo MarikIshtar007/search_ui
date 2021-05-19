@@ -12,44 +12,47 @@ class TopVendorTile extends StatelessWidget {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
 
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: 10),
-      margin: EdgeInsets.only(left: 5),
-      color: Colors.white,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          CircleAvatar(
-            backgroundImage: AssetImage(photoUrl),
-            minRadius: 25,
-          ),
-          SizedBox(
-            width: width * 0.04,
-          ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                name,
-                style: TextStyle(
-                    fontSize: 14,
-                    color: Colors.grey[700],
-                    fontWeight: FontWeight.bold),
-              ),
-              SizedBox(
-                height: height * 0.01,
-              ),
-              Text(
-                designation,
-                style: TextStyle(
-                    fontSize: 13,
-                    color: Colors.grey[700],
-                    fontWeight: FontWeight.w500),
-              )
-            ],
-          ),
-        ],
+    return Material(
+      elevation: 2.0,
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 10),
+        margin: EdgeInsets.only(left: 5),
+        color: Colors.white,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            CircleAvatar(
+              backgroundImage: AssetImage(photoUrl),
+              minRadius: 25,
+            ),
+            SizedBox(
+              width: width * 0.04,
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  name,
+                  style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.grey[700],
+                      fontWeight: FontWeight.bold),
+                ),
+                SizedBox(
+                  height: height * 0.01,
+                ),
+                Text(
+                  designation,
+                  style: TextStyle(
+                      fontSize: 13,
+                      color: Colors.grey[700],
+                      fontWeight: FontWeight.w500),
+                )
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
