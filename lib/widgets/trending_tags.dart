@@ -24,7 +24,7 @@ class _TrendingTagsWidgetState extends State<TrendingTagsWidget> {
 
     var listViewModel = Provider.of<TrendingTagListViewModel>(context);
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+      margin: EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 10),
       width: width,
       height: height * 0.2,
       child: Column(
@@ -37,9 +37,7 @@ class _TrendingTagsWidgetState extends State<TrendingTagsWidget> {
                 fontSize: 16,
                 fontWeight: FontWeight.bold),
           ),
-          Container(
-            height: height * 0.17,
-            width: width,
+          Expanded(
             child: StaggeredGridView.countBuilder(
               scrollDirection: Axis.horizontal,
               crossAxisCount: 3,
