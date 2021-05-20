@@ -1,4 +1,5 @@
-# search_ui
+# search_ui - A Flutter Search Screen App
+
 
 A new Flutter project.
 
