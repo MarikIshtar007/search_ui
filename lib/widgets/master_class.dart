@@ -24,11 +24,32 @@ class _MasterClassWidgetState extends State<MasterClassWidget> {
     return Container(
         margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         width: width,
-        height: height * 0.22,
-        child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          itemCount: listViewModel.masterClasses.length,
-          itemBuilder: (context, index) => listViewModel.masterClasses[index],
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Masterclass',
+              style: TextStyle(
+                  color: Colors.grey[600],
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              width: width,
+              height: height * 0.22,
+              child: ListView.builder(
+                shrinkWrap: true,
+                scrollDirection: Axis.horizontal,
+                itemCount: listViewModel.masterClasses.length,
+                itemBuilder: (context, index) =>
+                    listViewModel.masterClasses[index],
+              ),
+            ),
+          ],
         ));
   }
 }
