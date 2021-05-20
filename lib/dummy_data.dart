@@ -133,3 +133,29 @@ List<TrendingProfile> trendingProfileDummyData = [
     photoUrl: 'assets/images/andrew.jpg',
   ),
 ];
+
+Map<String, dynamic> masterClassDummyData = {
+  'data': [
+    {
+      'title': 'Live Course: How to learn the art of mehandi with a ...',
+      'price': 200,
+      'photoUrl': 'assets/images/bridal_makeup.png',
+      'dates': '27th - 30th July',
+      'timings': '14:30 - 15:30',
+    },
+    {
+      'title': 'Art of Creating eyes that look magical for your next ...',
+      'price': 200,
+      'photoUrl': 'assets/images/bridal_makeup.png',
+      'dates': '27th - 30th July',
+      'timings': '14:30 - 15:30',
+    },
+    {
+      'title': 'Live Course: How to learn the art of mehandi with ...',
+      'price': 200,
+      'photoUrl': 'assets/images/bridal_makeup.png',
+      'dates': '27th - 30th July',
+      'timings': '14:30 - 15:30',
+    }
+  ]
+};

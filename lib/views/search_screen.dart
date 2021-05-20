@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:search_ui/widgets/master_class.dart';
 
 import 'package:search_ui/widgets/search_option_tile.dart';
 import 'package:search_ui/widgets/top_vendors.dart';
@@ -78,8 +79,11 @@ class _SearchScreenState extends State<SearchScreen> {
                 ),
                 TrendingTagsWidget(),
                 TopVendorsWidget(),
+                SizedBox(
+                  height: 10,
+                ),
                 TrendingProfilesWidget(),
-                TrendingProfilesWidget()
+                MasterClassWidget()
               ],
             ),
           ),

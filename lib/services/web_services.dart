@@ -1,7 +1,9 @@
 import 'package:search_ui/dummy_data.dart';
+import 'package:search_ui/models/master_class.dart';
 import 'package:search_ui/models/trending_profile.dart';
 import 'package:search_ui/models/trending_tag.dart';
 import 'package:search_ui/models/vendor.dart';
+import 'dart:convert';
 
 class WebService {
   // Add call to api's / database here using http or dio. And handle the it accordingly.
@@ -36,5 +38,18 @@ class WebService {
     // similar code as above
     Future.delayed(Duration(seconds: 1));
     return trendingProfileDummyData;
+  }
+
+  List<MasterClass> fetchMasterClass() {
+    // This function would be a Future return type, have async and
+    // query the data and parse it using the fromJSON method from the model.
+    // similar code as above
+    List<MasterClass> masterClasses = [];
+    // This is the sort of response we would get from an api call;
+    var response = JsonEncoder().convert(masterClassDummyData);
+    Future.delayed(Duration(seconds: 1));
+    List data = jsonDecode(response)['data'];
+    masterClasses = data.map((master) => MasterClass.fromJSON(master)).toList();
+    return masterClasses;
   }
 }

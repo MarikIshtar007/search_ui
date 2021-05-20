@@ -1,7 +1,7 @@
 import 'package:search_ui/models/trending_profile.dart';
 
 class TrendingProfileViewModel {
-  late TrendingProfile _trendingProfile;
+  TrendingProfile _trendingProfile;
 
   TrendingProfileViewModel({required TrendingProfile trendingProfile})
       : _trendingProfile = trendingProfile;
