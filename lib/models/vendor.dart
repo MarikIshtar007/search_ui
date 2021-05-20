@@ -9,7 +9,7 @@ class Vendor {
   factory Vendor.fromJSON(Map<String, dynamic> json) {
     return Vendor(
         name: json['name'],
-        designation: json['name'],
+        designation: json['designation'],
         photoUrl: json['photoUrl']);
   }
 }

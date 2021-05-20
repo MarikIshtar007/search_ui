@@ -28,16 +28,27 @@ class WebService {
     // This function would be a Future return type, have async and
     // query the data and parse it using the fromJSON method from the model.
     // similar code as above
+    List<Vendor> topVendors = [];
+
+    var response = JsonEncoder().convert(topVendorsDummyData);
     Future.delayed(Duration(seconds: 1));
-    return topVendorsDummyData;
+    List data = jsonDecode(response)['data'];
+    topVendors = data.map((vendor) => Vendor.fromJSON(vendor)).toList();
+    return topVendors;
   }
 
   List<TrendingProfile> fetchTopProfiles() {
     // This function would be a Future return type, have async and
     // query the data and parse it using the fromJSON method from the model.
     // similar code as above
+    List<TrendingProfile> trendingProfiles = [];
+
+    var response = JsonEncoder().convert(trendingProfileDummyData);
     Future.delayed(Duration(seconds: 1));
-    return trendingProfileDummyData;
+    List data = jsonDecode(response)['data'];
+    trendingProfiles =
+        data.map((profile) => TrendingProfile.fromJSON(profile)).toList();
+    return trendingProfiles;
   }
 
   List<MasterClass> fetchMasterClass() {
