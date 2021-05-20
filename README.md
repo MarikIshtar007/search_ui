@@ -1,17 +1,13 @@
 # search_ui - A Flutter Search Screen App
+This is a screen mockup of a given screen design. The app was made in part of the task given by Pankhuri.
+
+## Dependencies
+- Provider
+- Staggered Flutter Grid View
+
+## APK
+##### Find the apk of this project attached in the releases of this repository.
+
+##### Or The link to the url is [this](https://github.com/MarikIshtar007/search_ui/releases/download/1.0/app-release.apk)
 
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
